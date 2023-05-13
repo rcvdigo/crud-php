@@ -1,0 +1,132 @@
+body {
+	width: 1360px;
+}
+
+main {
+    width: 100%;
+}
+
+.table td, .table th {
+    vertical-align: inherit;
+}
+
+img.mini{
+    width: 80px;
+}
+
+img.full{
+    height: 400px;
+}
+
+table.listagem {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.listagem tr {
+    height: 50px;
+}
+
+table.listagem tr:nth-child(even){
+    background-color: #f2f2ff;
+}
+
+table.listagem td:nth-child(1){
+    width: 50px;
+}
+
+table.listagem td:nth-child(3){
+    width: 90px;
+}
+
+table.detalhes {
+    width: 100%;
+}
+
+table{
+    text-align: center;
+}
+
+table.detalhes td{
+    padding: 10px;
+    vertical-align: top;
+}
+
+#corpo>a{
+    margin-left: 10px;
+}
+
+.nota{
+    display: block;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer, header {
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+#busca{
+    text-align: center;
+}
+
+#busca>input#campo_busca{
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+#busca>input#btn-enviar{
+    width: 10%;
+    height: 35px;
+    margin-top: -5px;
+}
+
+
+/* 412px - 914px = Celular */
+@media (min-width: 52px) and (max-width: 914px) {
+    body {
+        width:412px;
+        margin:auto;    
+    }
+    main {
+        width: 100%;
+    }
+    .col-8{
+        max-width:100%;
+        padding:0px;
+    }
+    .table td, .table th {
+	    vertical-align: inherit;
+    }
+    .btn {
+        width:92px;
+        height:37px;
+        margin:3px 0px;
+    }
+}
+
+/* 914px - 1024px = Telas menores, Laptops */
+@media (min-width: 914px) {
+    main {
+        width: 100%;
+    }
+}
+
+/* 1024px - 1200px = Desktop */
+@media (min-width: 1024px) {
+    main {
+        width: 100%;
+    }
+}
+
+/* 1200px e + = Telas maiores, Tvs */
+@media (min-width: 1200px) {
+    main {
+        width: 100%;
+    }
+}
