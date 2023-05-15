@@ -6,6 +6,40 @@ main {
     width: 100%;
 }
 
+/* 412px - 914px = Celular */
+@media (min-width: 52px) AND (max-width: 914px) {
+    body {
+        width:412px;
+        margin:auto;    
+    }
+
+    main {
+        width: 100%;
+    }
+    
+    .col-8{
+        max-width:100%;
+        padding:0px;
+    }
+    .table td, .table th {
+	    vertical-align: inherit;
+    }
+    .btn {
+        width:92px;
+        height:37px;
+        margin:3px 0px;
+    }
+
+    table.detalhes tr, table.detalhes td{
+        display: block;
+    }
+
+    .detalhes {
+        display: block;
+    }
+
+}
+
 .table td, .table th {
     vertical-align: inherit;
 }
@@ -30,14 +64,6 @@ table.listagem tr {
 
 table.listagem tr:nth-child(even){
     background-color: #f2f2ff;
-}
-
-table.listagem td:nth-child(1){
-    width: 50px;
-}
-
-table.listagem td:nth-child(3){
-    width: 90px;
 }
 
 table.detalhes {
@@ -82,51 +108,37 @@ footer, header {
 
 #busca>input#btn-enviar{
     width: 10%;
-    height: 35px;
+    height: 28pt;
     margin-top: -5px;
 }
 
 
-/* 412px - 914px = Celular */
-@media (min-width: 52px) and (max-width: 914px) {
-    body {
-        width:412px;
-        margin:auto;    
-    }
-    main {
-        width: 100%;
-    }
-    .col-8{
-        max-width:100%;
-        padding:0px;
-    }
-    .table td, .table th {
-	    vertical-align: inherit;
-    }
-    .btn {
-        width:92px;
-        height:37px;
-        margin:3px 0px;
-    }
+body main div#corpo h1{
+    text-align: center;
 }
 
-/* 914px - 1024px = Telas menores, Laptops */
+
+/*
+
+914px - 1024px = Telas menores, Laptops
 @media (min-width: 914px) {
     main {
         width: 100%;
     }
 }
 
-/* 1024px - 1200px = Desktop */
+1024px - 1200px = Desktop
 @media (min-width: 1024px) {
     main {
         width: 100%;
     }
 }
 
-/* 1200px e + = Telas maiores, Tvs */
+1200px e + = Telas maiores, Tvs
 @media (min-width: 1200px) {
     main {
         width: 100%;
     }
 }
+
+*/
